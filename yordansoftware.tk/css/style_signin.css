@@ -1,0 +1,113 @@
+:root {
+ --darkBlackShadeColor: #1e1e1e;
+ --lightBlackShadeColor: #2f2f2f;
+ --lineColor: #707070;
+ --headingColor: #2f89fc;
+ --inputBorderColor: #707070;
+ --btnColor: #ffce54;
+ --btnTextColor: #1e1e1e;
+ --activatorColor: #c03546;
+ --h2Color: #707070;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Ariel", sans-serif;
+}
+
+body {
+
+}
+.container  {
+	background-color: var(--darkBlackShadeColor);
+	height: 100vh;
+	padding: 30px 50px;
+}
+
+.form, .activators {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.form > div {
+	height: calc(95vh - 10px);
+	width: 50%;
+	position: relative;
+	top: -30px;
+}
+
+.signup h2{
+	color: #1abb9c;
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 80px;
+	margin-left: 37%;
+}
+
+input {
+	width: 450px;
+	border-radius: 10px;
+	padding: 15px;
+	border: 3px solid var(--inputBorderColor);
+	background-color: var(--lightBlackShadeColor);
+	position: relative;
+	left: 50%;
+	right: 50%;
+	transform: translateX(-50%);
+	color: var(--h2Color);
+}
+
+input:focus {
+	outline: none;
+}
+
+.signup input:nth-child(1) {
+	margin-top: 40px;
+}
+
+.signup input:nth-child(2) {
+	margin-top: 50px;
+}
+
+.signup input:nth-child(3) {
+	margin-top: 50px;
+}
+
+button {
+	display: block;
+	background-color: var(--btnColor);
+	color: var(--btnTextColor);
+	text-transform: uppercase;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	transform: translateX(-50%);
+	margin-top: 40px;
+	font-size: 1.3rem;
+}
+
+.signup, .login {
+	cursor: pointer;
+}
+
+
+@media all and (min-width:1001px) {
+	.container {
+			  max-width: 900px;
+			  margin: auto;
+			  padding: 10px;
+			  position: relative;
+			  background: none;
+	}
+}
+
+.signin-background {
+	position: absolute;
+}
